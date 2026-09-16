@@ -39,23 +39,67 @@ enum {
 
 // Custom Callback Functions
 void td_a_finished(tap_dance_state_t *state, void *user_data) {
-    if (state->count == 1) tap_code16(KC_A);
-    else if (state->count == 2) tap_code16(RALT(KC_A));
+    if (state->count == 1) {
+        if (state->interrupted || !state->pressed) {
+            tap_code16(KC_A);
+        } else {
+            tap_code16(S(KC_A));
+        }
+    } else if (state->count == 2) {
+        if (state->interrupted || !state->pressed) {
+            tap_code16(RALT(KC_A));
+        } else {
+            tap_code16(S(RALT(KC_A)));
+        }
+    }
 }
 
 void td_o_finished(tap_dance_state_t *state, void *user_data) {
-    if (state->count == 1) tap_code16(KC_O);
-    else if (state->count == 2) tap_code16(RALT(KC_O));
+    if (state->count == 1) {
+        if (state->interrupted || !state->pressed) {
+            tap_code16(KC_O);
+        } else {
+            tap_code16(S(KC_O));
+        }
+    } else if (state->count == 2) {
+        if (state->interrupted || !state->pressed) {
+            tap_code16(RALT(KC_O));
+        } else {
+            tap_code16(S(RALT(KC_O)));
+        }
+    }
 }
 
 void td_u_finished(tap_dance_state_t *state, void *user_data) {
-    if (state->count == 1) tap_code16(KC_U);
-    else if (state->count == 2) tap_code16(RALT(KC_U));
+    if (state->count == 1) {
+        if (state->interrupted || !state->pressed) {
+            tap_code16(KC_U);
+        } else {
+            tap_code16(S(KC_U));
+        }
+    } else if (state->count == 2) {
+        if (state->interrupted || !state->pressed) {
+            tap_code16(RALT(KC_U));
+        } else {
+            tap_code16(S(RALT(KC_U)));
+        }
+    }
 }
 
 void td_s_finished(tap_dance_state_t *state, void *user_data) {
-    if (state->count == 1) tap_code16(KC_S);
-    else if (state->count == 2) tap_code16(RALT(KC_S));
+    if (state->count == 1) {
+        if (state->interrupted || !state->pressed) {
+            tap_code16(KC_S);
+        } else {
+            tap_code16(S(KC_S));
+        }
+    } else if (state->count == 2) {
+        if (state->interrupted || !state->pressed) {
+            tap_code16(RALT(KC_S));
+        } else {
+            tap_code16(S(RALT(KC_S)));
+        }
+    }
 }
 
 // Definitions
