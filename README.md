@@ -4,7 +4,7 @@
 
 My Goal Was To Create an Efficient and Easy-To-Use Keymap.
 
-Fell Free To Contribute to This Keymap or Use It as a Base for Your Own!
+Feel Free To Contribute to This Keymap or Use It as a Base for Your Own!
 
 If You Are Wondering Why I Call It "Automail", It Is an FMAB Reference ;).
 
@@ -36,9 +36,9 @@ Features:
 4. QMK - [Flashing Your Keyboard](https://docs.qmk.fm/newbs_flashing)
 
 Note:
-– With the Current Configuration, the Firmware Is Compiled for an RP2040 MCU With Outputs a `.uf2`.
-– A Pre-Compiled Version of the Firmware Can Be Found at `firmware/`.
-– If You Want To Change That Behavior, Adjust the `keymaps/Automail/keymap.json`.
+- With the Current Configuration, the Firmware Is Compiled for an RP2040 MCU With Outputs an `.uf2`.
+- A Pre-Compiled Version of the Firmware Can Be Found at `firmware/`.
+- If You Want To Change That Behavior, Adjust the `keymaps/Automail/keymap.json`.
 
 ## Useful
 
