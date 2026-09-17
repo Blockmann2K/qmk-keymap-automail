@@ -4,7 +4,7 @@
 #pragma once
 
 // Reduce Debounce Time
-#define DEBOUNCE 3 // Reduce Input Latency by Filtering Key Chatter Faster Than the Default 5ms.
+#define DEBOUNCE 3 // Reduce Input Latency by Filtering Key Chatter Faster Than the Default 5 ms.
 
 // Ensure Polling Rate
 #define USB_POLLING_INTERVAL_MS 1 // Force 1000 Hz Polling Rate
