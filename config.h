@@ -8,3 +8,9 @@
 
 // Ensure Polling Rate
 #define USB_POLLING_INTERVAL_MS 1 // Force 1000 Hz Polling Rate
+
+// Auto-Shift Configuration
+#define AUTO_SHIFT_TIMEOUT 175 // ...
+
+// Tap Dance Configuration
+#define TAPPING_TERM 150 // ...
