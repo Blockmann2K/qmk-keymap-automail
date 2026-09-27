@@ -151,19 +151,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Layer 2 - Symbols
     [2] = LAYOUT(
         // First Row
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MO(3), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MO(3), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
 
         // Second Row
-        KC_NO, KC_PPLS, KC_PMNS, KC_PAST, KC_PSLS, KC_PIPE, KC_CIRC, KC_LCBR, KC_RCBR, KC_DLR, KC_UNDS, KC_NO,
+        KC_TRNS, KC_PPLS, KC_PMNS, KC_PAST, KC_PSLS, KC_PIPE, KC_CIRC, KC_LCBR, KC_RCBR, KC_DLR, KC_UNDS, KC_NO,
 
         // Third Row
-        KC_NO, KC_EXLM, KC_LT, KC_GT, KC_PEQL, KC_AMPR, KC_HASH, KC_LPRN, KC_RPRN, KC_SCLN, KC_QUOT, KC_NO,
+        KC_LSFT, KC_EXLM, KC_LT, KC_GT, KC_PEQL, KC_AMPR, KC_HASH, KC_LPRN, KC_RPRN, KC_SCLN, KC_QUOT, KC_NO,
 
         // Fourth Row
-        KC_NO, KC_GRV, KC_TILD, KC_LBRC, KC_RBRC, KC_PERC, KC_NO, KC_NO, KC_AT, KC_QUES, KC_COMM, KC_DOT, KC_BSLS, KC_NO,
+        KC_LCTL, KC_GRV, KC_TILD, KC_LBRC, KC_RBRC, KC_PERC, KC_NO, KC_NO, KC_AT, KC_QUES, KC_COMM, KC_DOT, KC_BSLS, KC_NO,
 
         // Fifth Row
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
+        KC_LGUI, KC_LALT, KC_SPC, KC_TRNS, KC_TRNS, KC_NO, KC_TRNS, KC_NO
     ),
 
     // Layer 3 - System

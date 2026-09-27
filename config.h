@@ -10,7 +10,9 @@
 #define USB_POLLING_INTERVAL_MS 1 // Force 1000 Hz Polling Rate
 
 // Auto-Shift Configuration
-#define AUTO_SHIFT_TIMEOUT 175 // ...
+#define AUTO_SHIFT_REPEAT // Enable Keyrepeat Support
+
+#define AUTO_SHIFT_TIMEOUT 200 // Hold Duration in Milliseconds To Send Shifted Key.
 
 // Tap Dance Configuration
-#define TAPPING_TERM 150 // ...
+#define TAPPING_TERM 150 // Time Duration in Milliseconds To Distinguish Between Tap and Hold.
