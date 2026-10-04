@@ -23,7 +23,7 @@ Operating System Requirement:
 
 Features:
 - Custom Layout Based on the Colemak-DH Mod With Tap Dance for German Special Characters.
-- Dedicated Navigation, Symbol, System, and Fallback (QWERTY) Layers.
+- Dedicated Alternate, Symbol, System, and Fallback (QWERTY) Layers.
 - Rotary Encoder Mapping for Volume Control.
 - OLED Display Featuring a 32x32 Pixel Art, Indicating Active Layers, Caps Lock State, and Auto-Shift State.
 ```

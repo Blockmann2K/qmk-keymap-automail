@@ -12,7 +12,7 @@
  *
  * Features:
  * - Custom Layout Based on the Colemak-DH Mod With Tap Dance for German Special Characters.
- * - Dedicated Navigation, Symbol, System, and Fallback (QWERTY) Layers.
+ * - Dedicated Alternate, Symbol, System, and Fallback (QWERTY) Layers.
  * - Rotary Encoder Mapping for Volume Control.
  * - OLED Display Featuring a 32x32 Pixel Art, Indicating Active Layers, Caps Lock State, and Auto-Shift State.
  */
@@ -115,10 +115,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Layer 0 - Base
     [0] = LAYOUT(
         // First Row
-        QK_GESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_NO, KC_MPLY, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS,
+        KC_NO, KC_1, KC_2, KC_3, KC_4, KC_5, KC_NO, KC_MPLY, KC_6, KC_7, KC_8, KC_9, KC_0, KC_CAPS,
 
         // Second Row
-        KC_CAPS, KC_Q, KC_W, KC_F, KC_P, KC_B, KC_J, KC_L, TD(TD_U_UE), KC_Y, KC_SCLN, KC_INS,
+        QK_GESC, KC_Q, KC_W, KC_F, KC_P, KC_B, KC_J, KC_L, TD(TD_U_UE), KC_Y, KC_SCLN, KC_INS,
 
         // Third Row
         KC_LSFT, TD(TD_A_AE), KC_R, TD(TD_S_SS), KC_T, KC_G, KC_M, KC_N, KC_E, KC_I, TD(TD_O_OE), KC_HOME,
@@ -130,10 +130,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LGUI, KC_LALT, KC_SPC, KC_BSPC, KC_ENT, MO(1), MO(2), TG(4)
     ),
 
-    // Layer 1 - Navigation
+    // Layer 1 - Alternate
     [1] = LAYOUT(
         // First Row
-        KC_TRNS, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_NO, KC_TRNS, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_TRNS,
+        KC_NO, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_NO, KC_TRNS, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_TRNS,
 
         // Second Row
         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_DEL,
@@ -151,7 +151,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Layer 2 - Symbols
     [2] = LAYOUT(
         // First Row
-        KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MO(3), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MO(3), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
 
         // Second Row
         KC_TRNS, KC_PPLS, KC_PMNS, KC_PAST, KC_PSLS, KC_PIPE, KC_CIRC, KC_LCBR, KC_RCBR, KC_DLR, KC_UNDS, KC_NO,
@@ -187,10 +187,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Layer 4 - Fallback
     [4] = LAYOUT(
         // First Row
-        QK_GESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_NO, KC_MPLY, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS,
+        KC_NO, KC_1, KC_2, KC_3, KC_4, KC_5, KC_NO, KC_MPLY, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS,
 
         // Second Row
-        KC_CAPS, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC,
+        QK_GESC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC,
 
         // Third Row
         KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT,
@@ -259,7 +259,7 @@ static void print_status_narrow(void) {
             oled_write_P(PSTR("-Base\n"), false);
             break;
         case 1:
-            oled_write_P(PSTR("-Nav \n"), false);
+            oled_write_P(PSTR("-Alt \n"), false);
             break;
         case 2:
             oled_write_P(PSTR("-Sym \n"), false);
