@@ -12,7 +12,7 @@
 // Auto-Shift Configuration
 #define AUTO_SHIFT_REPEAT // Enable Keyrepeat Support
 
-#define AUTO_SHIFT_TIMEOUT 225 // Hold Duration in Milliseconds To Send Shifted Key.
+#define AUTO_SHIFT_TIMEOUT 175 // Hold Duration in Milliseconds To Send Shifted Key.
 
 // Tap Dance Configuration
 #define TAPPING_TERM 175 // Time Duration in Milliseconds To Distinguish Between Tap and Hold.
