@@ -115,10 +115,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Layer 0 - Base
     [0] = LAYOUT(
         // First Row
-        KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_NO, KC_MPLY, KC_6, KC_7, KC_8, KC_9, KC_0, KC_CAPS,
+        KC_WREF, KC_1, KC_2, KC_3, KC_4, KC_5, KC_NO, KC_MPLY, KC_6, KC_7, KC_8, KC_9, KC_0, KC_CAPS,
 
         // Second Row
-        KC_TAB, KC_Q, KC_W, KC_F, KC_P, KC_B, KC_J, KC_L, TD(TD_U_UE), KC_Y, KC_SCLN, KC_INS,
+        KC_ESC, KC_Q, KC_W, KC_F, KC_P, KC_B, KC_J, KC_L, TD(TD_U_UE), KC_Y, KC_SCLN, KC_INS,
 
         // Third Row
         KC_LSFT, TD(TD_A_AE), KC_R, TD(TD_S_SS), KC_T, KC_G, KC_M, KC_N, KC_E, KC_I, TD(TD_O_OE), KC_HOME,
@@ -145,7 +145,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_RCTL, KC_LBRC, KC_RBRC, KC_1, KC_2, KC_3, KC_0, KC_NO, KC_PEQL, KC_PPLS, KC_PAST, KC_PMNS, KC_PSLS, KC_PGDN,
 
         // Fifth Row
-        KC_TRNS, KC_RALT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_NO
+        KC_TRNS, KC_RALT, KC_TAB, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_NO
     ),
 
     // Layer 2 - Fallback
